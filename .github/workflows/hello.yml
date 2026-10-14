@@ -1,9 +1,12 @@
 name: hello
-on: push
+on:
+  push:
+    paths:
+      - '.github/workflows/hello.yml'
 jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Say Hello CI"
-      
+
         

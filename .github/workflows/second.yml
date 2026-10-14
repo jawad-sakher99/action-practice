@@ -1,0 +1,7 @@
+name: second
+on: push
+jobs:
+    say-hello:
+        runs-on: ubuntu-latest
+        steps:
+            -run: echo "start second CI"

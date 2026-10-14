@@ -7,4 +7,5 @@ jobs:
             - run: echo "start second CI"
             - run: date
             - run: whoami
+            - run: echo "end second CI"
 

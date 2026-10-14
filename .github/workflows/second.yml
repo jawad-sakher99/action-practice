@@ -6,5 +6,5 @@ jobs:
         steps:
             - run: echo "start second CI"
             - run: date
-            - run: whoaim
-            
+            - run: whoami
+

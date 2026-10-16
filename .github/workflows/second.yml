@@ -27,7 +27,7 @@ jobs:
             - uses: actions/cache@v4
               with:
                 path: my-cache
-                key: demo-v1
+                key: demo-${{ hashFiles('deps.txt') }}
             - run: mkdir -p my-cache
             - run: date >> my-cache/time.txt
             - run: cat my-cache/time.txt

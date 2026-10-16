@@ -6,7 +6,7 @@ jobs:
         steps:
             - run: echo "start second CI"
             - run: date
-            - run: whoami
+            - run: whoamii
             - run: echo "end second CI"
     good-bye:
         runs-on: ubuntu-latest

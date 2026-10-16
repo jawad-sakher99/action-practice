@@ -20,6 +20,14 @@ jobs:
               color: [red, blue]
         steps:
         - run: echo "color is ${{ matrix.color }}"
+        
+    cache-demo:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/cache@v4
+              with:
+                path: some-folder
+                key: some-key
+            
 
-                    
-
+            

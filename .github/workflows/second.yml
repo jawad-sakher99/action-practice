@@ -17,10 +17,9 @@ jobs:
         runs-on: ubuntu-latest
         strategy:
             matrix:
-                color: [red, blue]
-                steps:
-                    - run: echo "color is ${{ matrix.color }}"
-
+              color: [red, blue]
+        steps:
+        - run: echo "color is ${{ matrix.color }}"
 
                     
 

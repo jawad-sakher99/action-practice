@@ -1,7 +1,7 @@
 name: second
 on: push
 jobs:
-    say-hello:
+    say-time:
         runs-on: ubuntu-latest
         steps:
             - run: echo "start second CI"
@@ -10,7 +10,7 @@ jobs:
             - run: echo "end second CI"
     good-bye:
         runs-on: ubuntu-latest
-        needs: say-hello
+        needs: say-time
         steps:
             - run: echo " bye jawad"
     colors:
@@ -28,6 +28,6 @@ jobs:
               with:
                 path: my-cache
                 key: demo-v1
-            
-
-            
+            - run: mkdir -p my-cache
+            - run: date >> my-cache/time.txt
+            - run: cat my-cache/time.txt

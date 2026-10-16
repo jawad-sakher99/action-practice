@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         needs: say-time
         steps:
-            - run: echo " bye jawad"
+            - run: echo " bye jawad againe"
     colors:
         runs-on: ubuntu-latest
         strategy:

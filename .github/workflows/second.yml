@@ -42,5 +42,10 @@ jobs:
                     POSTGRES_PASSWORD: test
                 ports:
                     - 5432:5432
+                options: >-
+                  --health-cmd pg_isready
+                  --health-interval 5s
+                  --health-timeout 5s
+                  --health-retries 5    
         steps:
-            - run: pg_isready -h localhost -p 5432
+                  - run: pg_isready -h localhost -p 5432

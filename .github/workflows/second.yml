@@ -33,14 +33,14 @@ jobs:
             - run: date >> my-cache/time.txt
             - run: cat my-cache/time.txt
 
-    dp-test:
+    db-test:
         runs-on: ubuntu-latest
         services:
-            dp:
+            db:
                 image: postgres:16
                 env:
                     POSTGRES_PASSWORD: test
                 ports:
                     - 5432:5432
         steps:
-            - run: pg_isready -h localhost -p 5432             
+            - run: pg_isready -h localhost -p 5432

@@ -26,8 +26,8 @@ jobs:
         steps:
             - uses: actions/cache@v4
               with:
-                path: some-folder
-                key: some-key
+                path: my-cache
+                key: demo-v1
             
 
             

@@ -13,4 +13,14 @@ jobs:
         needs: say-hello
         steps:
             - run: echo " bye jawad"
+    colors:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                color: [red, blue]
+                steps:
+                    - run: echo "color is ${{ matrix.color }}"
+
+
+                    
 

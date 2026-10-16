@@ -8,4 +8,9 @@ jobs:
             - run: date
             - run: whoami
             - run: echo "end second CI"
+    good-bye:
+        runs-on: ubuntu-latest
+        needs: say-hello
+        steps:
+            - run: echo " bye jawad"
 
